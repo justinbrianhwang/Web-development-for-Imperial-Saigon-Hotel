@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="contact-title">연락처</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script> <!-- 헤더와 푸터 로드를 위한 스크립트 -->
+    <script defer src="language.js"></script> <!-- 언어 전환 스크립트 -->
+</head>
+<body>
+    <!-- 헤더는 JavaScript로 로드됨 -->
+    <header></header>
+
+    <section id="contact-info">
+        <h2 data-translate="contact-title">연락처</h2>
+
+        <p data-translate="contact-description">호텔에 대한 문의 사항이 있으시면 언제든지 연락 주십시오.</p>
+
+        <!-- 연락처 정보 -->
+        <div id="contact-details">
+            <p data-translate="phone-label">전화번호: +84 123 456 789</p>
+            <p data-translate="email-label">이메일: contact@imperialhotel.com</p>
+            <p data-translate="address-label">주소: 123 Phu My Hung, District 7, Ho Chi Minh City, Vietnam</p>
+        </div>
+
+        <!-- 문의 양식 -->
+        <form action="/submit_contact" method="post" id="contact-form">
+            <div class="form-group">
+                <label for="name" data-translate="name-label">이름:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" data-translate="email-form-label">이메일:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" data-translate="message-label">메시지:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn" data-translate="submit-btn">문의하기</button>
+        </form>
+    </section>
+
+    <!-- 푸터는 JavaScript로 로드됨 -->
+    <footer></footer>
+</body>
+</html>

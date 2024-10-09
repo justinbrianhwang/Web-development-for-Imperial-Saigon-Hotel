@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="hotel-name">호텔 소개</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script> <!-- 헤더와 푸터 로드 -->
+    <script defer src="language.js"></script> <!-- 언어 변경 스크립트 -->
+</head>
+<body>
+    <!-- 헤더는 JavaScript로 로드됨 -->
+    <header></header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1 data-translate="hotel-name">호텔 이름</h1>
+            <p data-translate="hero-description">편안한 휴식을 제공하는 최고의 호텔</p>
+            <a href="reservation.html" class="btn" data-translate="reservation-btn">지금 예약하기</a>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section">
+        <h2 data-translate="rooms-link">객실</h2>
+        <div class="room-list">
+            <div class="room-item">
+                <img src="room1.jpg" alt="객실 사진">
+                <h3 data-translate="deluxe-room">디럭스 룸</h3>
+                <p data-translate="deluxe-room-description">넓고 안락한 공간과 함께 최고의 뷰를 자랑하는 디럭스 룸.</p>
+            </div>
+            <div class="room-item">
+                <img src="room2.jpg" alt="객실 사진">
+                <h3 data-translate="premium-suite">프리미엄 스위트</h3>
+                <p data-translate="premium-suite-description">최고급 시설과 서비스가 제공되는 프리미엄 스위트 룸.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터는 JavaScript로 로드됨 -->
+    <footer></footer>
+</body>
+</html>

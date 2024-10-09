@@ -1,0 +1,28 @@
+<!-- header.html -->
+<nav>
+    <!-- 홈 아이콘 -->
+    <div class="home-icon">
+        <a href="main.html">
+            <img src="https://i.imgur.com/9MUXf65.png" alt="홈 아이콘" class="home-icon-img">
+        </a>
+    </div>
+
+    <ul>
+        <li><a href="about.html" data-translate="about-link">호텔 소개</a></li>
+        <li><a href="rooms.html" data-translate="rooms-link">객실</a></li>
+        <li><a href="facilities.html" data-translate="facilities-link">편의 시설</a></li>
+        <li><a href="contact.html" data-translate="contact-link">연락처</a></li>
+        <li><a href="nearby_attractions.html" data-translate="attractions-link">주변 관광</a></li>
+        <li><a href="developer.html" data-translate="developer-link">사이트 개발자</a></li>
+    </ul>
+
+    <!-- 언어 선택 -->
+    <div class="language-selector">
+        <label for="language-select">Language</label>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+            <option value="vi">Tiếng Việt</option>
+        </select>
+    </div>
+</nav>
